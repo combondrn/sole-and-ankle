@@ -21,17 +21,20 @@ const Header = () => {
           <NavLink href="/kids">Kids</NavLink>
           <NavLink href="/collections">Collections</NavLink>
         </Nav>
+        <LogoSpacer />
       </MainHeader>
     </header>
   );
 };
 
 const MainHeader = styled.div`
-  padding: 20px 32px;
+  height: 72px;
+  padding: 0 32px;
   border-bottom: 1px solid ${COLORS.gray[300]};
   display: flex;
   align-items: baseline;
   gap: 48px;
+  padding-top: 18px;
 `;
 
 const Nav = styled.nav`
@@ -51,6 +54,14 @@ const NavLink = styled.a`
   &:first-of-type {
     color: ${COLORS.secondary};
   }
+`;
+
+// want Nav to be centered on page, so give equal spacing on both sides by mirroring Logo, but making the mirror invisible
+const LogoSpacer = styled(Logo)`
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  cursor: default;
 `;
 
 export default Header;

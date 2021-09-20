@@ -17,7 +17,7 @@ const ShoeGrid = () => {
 const Wrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
-  gap: 60px 36px;
+  gap: 48px 36px;
 `;
 
 export default ShoeGrid;

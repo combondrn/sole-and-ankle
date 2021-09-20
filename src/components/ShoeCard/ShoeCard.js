@@ -35,6 +35,7 @@ const ShoeCard = ({
     "on-sale": {
       "--background-color": "#C5295D",
       "--price-text-decoration": "line-through",
+      "--price-text-color": "gray",
     },
     "new-release": {
       "--background-color": "#6868D9",
@@ -111,6 +112,7 @@ const Name = styled.h3`
 
 const Price = styled.span`
   text-decoration: var(--price-text-decoration);
+  color: var(--price-text-color);
 `;
 
 const ColorInfo = styled.p`
