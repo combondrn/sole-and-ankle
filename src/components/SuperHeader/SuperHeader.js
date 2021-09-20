@@ -41,7 +41,7 @@ const HelpLink = styled.a`
   color: inherit;
   text-decoration: none;
   outline-offset: 2px;
-  padding: 0px 16px;
+  padding: 0px 24px;
 
   &:not(:focus-visible) {
     outline: none;
